@@ -1,0 +1,41 @@
+// @import "./utils/module";
+// @import "./base/module";
+// @import "./components/module";
+// @import "./layout/module";
+
+// utils
+@import './utils/variables';
+@import './utils/body';
+@import './utils/visually-hidden';
+// @import "./utils/placeholders";
+
+// base
+@import './base/common';
+@import './base/reset';
+@import './base/section';
+@import './base/container';
+@import './base/animation';
+
+// components
+@import './components/buttons';
+@import './components/button-close';
+@import './components/social';
+@import './components/logo';
+@import './components/backdrop-wrapper';
+@import './components/form';
+@import './components/filter';
+
+// layout
+
+@import './layout/header';
+// Головна
+@import './layout/hero';
+@import './layout/features';
+@import './layout/hobbies';
+@import './layout/team';
+@import './layout/clients';
+// Портфоліо
+@import './layout/portfolio';
+@import './layout/card';
+// Футер
+@import './layout/footer';
