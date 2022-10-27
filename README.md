@@ -1,1 +1,1 @@
-goit-markup-hw-07 БЕМ та препроцессор SCSS
+# goit-js-hw-06_v3
