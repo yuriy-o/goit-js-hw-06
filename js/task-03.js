@@ -20,7 +20,7 @@ console.log(image);
 
 const markup = images.map(image => `<img src="${image.url}" alt="${image.alt}" width=33%>`);
 
-// const itemEl = document.createElement('img');
+//! const itemEl = document.createElement('img');
 // itemEl.src = image.url;
 // itemEl.alt = image.alt;
 
