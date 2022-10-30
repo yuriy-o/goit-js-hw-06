@@ -47,7 +47,7 @@ function onFormSubmit(event) {
   comment2El.innerHTML =
     'p.p.s. Щось не зрозумів як за допомогою <span style="color: red; font-size: 20px"><b >formData</b></span> або <span style="color: red; font-size: 20px"><b>elem.attributes</b></span> можна вивести данні в консоль.<br/>Чи цей метод використовується не для цих витівок?<br/>Якщо так, прошу розказати як це можна зробити ))';
 
-  formEl.append(titleEl, emailEl, passwordEl, hr, commentEl, hr2, comment2El);
+  formEl.after(titleEl, emailEl, passwordEl, hr, commentEl, hr2, comment2El);
 
   // v2 -----------Виведення данних в консоль----------------
   console.log({ email: email.value, password: password.value });
