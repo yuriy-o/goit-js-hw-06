@@ -32,6 +32,7 @@ function onDivCreate() {
 
     arr.push(divNewEl);
   }
+  refs.div.innerHTML = '';
 
   refs.div.append(...arr);
 }
