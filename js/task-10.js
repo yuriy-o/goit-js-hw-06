@@ -8,22 +8,21 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
+const refs = {
+  input: document.querySelector('input[type="number"]'),
+  buttonCreate: document.querySelector('button[data-create]'),
+  buttonDestroy: document.querySelector('button[data-destroy]'),
+  div: document.getElementById('boxes'),
+};
+
 const size = 30;
 
-const divControlEl = document.getElementById('controls');
-const inputEl = document.querySelector('input[type="number"]');
-
-const buttonCreateEl = document.querySelector('button[data-create]');
-const buttonDestroyEl = document.querySelector('button[data-destroy]');
-
-const divEl = document.getElementById('boxes');
-
-buttonCreateEl.addEventListener('click', onDivCreate);
+refs.buttonCreate.addEventListener('click', onDivCreate);
 
 function onDivCreate() {
   const arr = [];
 
-  for (let i = 0; i < inputEl.value; i += 1) {
+  for (let i = 0; i < refs.input.value; i += 1) {
     const divNewEl = document.createElement('div');
 
     divNewEl.classList.add('colorBox');
@@ -34,10 +33,10 @@ function onDivCreate() {
     arr.push(divNewEl);
   }
 
-  divEl.append(...arr);
+  refs.div.append(...arr);
 }
 
-buttonDestroyEl.addEventListener('click', onDivRemove);
+refs.buttonDestroy.addEventListener('click', onDivRemove);
 
 function onDivRemove() {
   const divNewEl333 = document.querySelectorAll('.colorBox');
